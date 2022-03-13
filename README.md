@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning python.
 - 💞️ I’m looking to collaborate on python projects.
 - 📫 How to reach me [LinkedIn](https://in.linkedin.com/in/soumyajyotibiswas)
+- 👣 Follow me on [Dev.to](https://dev.to/dashboard)
 
 <!---
 soumyajyotibiswas/soumyajyotibiswas is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
