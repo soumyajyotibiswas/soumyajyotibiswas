@@ -22,23 +22,11 @@ My work sits between architecture and execution: taking operationally messy syst
 
 ## Featured Work
 
-### [trade-ops-cli](https://github.com/soumyajyotibiswas/trade-ops-cli)
+| Project | What It Is | Engineering Signals | Write-up |
+| ------- | ---------- | ------------------- | -------- |
+| [trade-ops-cli](https://github.com/soumyajyotibiswas/trade-ops-cli) | Terminal broker-operations CLI for quote workflows, order planning, and safer execution paths. | Broker API orchestration, dry-run safety, mocked tests, structured logging, atomic file writes, holiday-aware expiry logic, Ruff, CI. | [Building a safer broker API CLI](https://calm-ops-lab.hashnode.dev/building-trade-ops-cli-a-safer-faster-terminal-workflow-for-broker-apis?utm_source=hashnode&utm_medium=feed) |
 
-A terminal broker-operations CLI built around API reliability, dry-run safety, and mocked broker workflows.
-
-What it shows:
-
-- Broker API orchestration for 5paisa and Kotak Neo.
-- Dry-run mode for order placement and cancellation safety.
-- Offline unit tests that mock live broker calls.
-- Session-cache hardening, SSL/CA handling, atomic JSON writes, and structured logging.
-- Expiry/date logic with NSE holiday-aware tests.
-- GitHub Actions CI, Ruff, compile checks, and dependency lockfiles.
-
-Why the broker split exists:
-
-- 5paisa is used for quote-heavy workflows because its quote API has been dependable for this use case.
-- Kotak Neo is used for trade execution because API trades are zero brokerage in this setup.
+The broker split in `trade-ops-cli` is intentional: 5paisa handles quote-heavy workflows because its quote API has been dependable for this use case, while Kotak Neo handles trade execution because API trades are zero brokerage in this setup.
 
 ## What I Build
 
@@ -64,6 +52,13 @@ Why the broker split exists:
 - Improving automation around cloud platforms, APIs, background workers, and reliability workflows.
 - Turning one-off scripts into maintainable tools with tests, docs, and clear operating boundaries.
 
+## Writing
+
+| Home | Focus | Link |
+| ---- | ----- | ---- |
+| The Calm Ops Lab | Current posts on automation, cloud architecture, reliability, and project deep-dives. | [Hashnode](https://calm-ops-lab.hashnode.dev/) |
+| DEV Community | Earlier notes on AWS, Linux, Python scripting, and learning in public. | [Dev.to archive](https://dev.to/soumyajyotibiswas) |
+
 ## Toolbox
 
 ```text
@@ -77,4 +72,5 @@ Quality       unittest, Ruff, static analysis, operational documentation
 ## Connect
 
 - [LinkedIn](https://in.linkedin.com/in/soumyajyotibiswas)
-- [Dev.to](https://dev.to/soumyajyotibiswas)
+- [The Calm Ops Lab](https://calm-ops-lab.hashnode.dev/)
+- [Dev.to archive](https://dev.to/soumyajyotibiswas)
