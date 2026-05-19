@@ -1,0 +1,60 @@
+{
+  "username": "soumyajyotibiswas",
+  "max_projects": 4,
+  "exclude_repos": [
+    "soumyajyotibiswas",
+    "trading_program",
+    "ninja-adventures"
+  ],
+  "featured_repos": [
+    {
+      "name": "codex-stats",
+      "summary": "Local-first Codex usage analytics dashboard for daily visibility, workflow history, and privacy-preserving operational insight.",
+      "signals": [
+        "Local metadata parsing",
+        "usage trend dashboards",
+        "CSV/JSON exports",
+        "privacy-first defaults",
+        "security-minded docs"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/soumyajyotibiswas/codex-stats"
+        }
+      ]
+    },
+    {
+      "name": "trade-ops-cli",
+      "summary": "Terminal broker-operations CLI for quote workflows, order planning, and safer execution paths.",
+      "signals": [
+        "Broker API orchestration",
+        "dry-run safety",
+        "mocked tests",
+        "structured logging",
+        "atomic file writes",
+        "holiday-aware expiry logic",
+        "Ruff",
+        "CI"
+      ],
+      "links": [
+        {
+          "label": "Building a safer broker API CLI",
+          "url": "https://calm-ops-lab.hashnode.dev/building-trade-ops-cli-a-safer-faster-terminal-workflow-for-broker-apis?utm_source=hashnode&utm_medium=feed"
+        }
+      ]
+    }
+  ],
+  "signal_keywords": {
+    "analytics": "analytics workflow",
+    "api": "API integration",
+    "automation": "automation tooling",
+    "broker": "broker/service API workflows",
+    "cli": "terminal UX",
+    "codex": "Codex workflow instrumentation",
+    "dashboard": "dashboard design",
+    "local-first": "local-first architecture",
+    "privacy": "privacy-preserving defaults",
+    "reliability": "reliability engineering"
+  }
+}

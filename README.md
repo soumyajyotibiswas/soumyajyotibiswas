@@ -22,9 +22,12 @@ My work sits between architecture and execution: taking operationally messy syst
 
 ## Featured Work
 
+<!-- profile-projects:start -->
 | Project | What It Is | Engineering Signals | Write-up |
 | ------- | ---------- | ------------------- | -------- |
+| [codex-stats](https://github.com/soumyajyotibiswas/codex-stats) | Local-first Codex usage analytics dashboard for daily visibility, workflow history, and privacy-preserving operational insight. | Local metadata parsing, usage trend dashboards, CSV/JSON exports, privacy-first defaults, security-minded docs. | [Repo](https://github.com/soumyajyotibiswas/codex-stats) |
 | [trade-ops-cli](https://github.com/soumyajyotibiswas/trade-ops-cli) | Terminal broker-operations CLI for quote workflows, order planning, and safer execution paths. | Broker API orchestration, dry-run safety, mocked tests, structured logging, atomic file writes, holiday-aware expiry logic, Ruff, CI. | [Building a safer broker API CLI](https://calm-ops-lab.hashnode.dev/building-trade-ops-cli-a-safer-faster-terminal-workflow-for-broker-apis?utm_source=hashnode&utm_medium=feed) |
+<!-- profile-projects:end -->
 
 The broker split in `trade-ops-cli` is intentional: 5paisa handles quote-heavy workflows because its quote API has been dependable for this use case, while Kotak Neo handles trade execution because API trades are zero brokerage in this setup.
 

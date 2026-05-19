@@ -1,0 +1,47 @@
+name: Refresh profile README
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate JSON config
+        run: python -m json.tool .github/profile-readme.config.json
+
+      - name: Compile Python
+        run: python -m py_compile scripts/update_profile_readme.py
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh generated project block
+        run: python scripts/update_profile_readme.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit README changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "README.md is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Refresh profile README"
+          git push
